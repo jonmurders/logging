@@ -1,4 +1,7 @@
 import dredgespec
-test = dredgespec.rsweeks('length')
-test2 = dredgespec.rsweekslong.length
-print(test2)
+import datainput
+import pandas as pd 
+
+data = datainput.datapull(datainput.mode,datainput.path,datainput.server,datainput.database,datainput.userid,datainput.passwd,datainput.table,datainput.query)
+
+print(data.head)
